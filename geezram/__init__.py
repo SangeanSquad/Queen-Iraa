@@ -95,8 +95,8 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URL = os.environ.get("DATABASE_URL")
-    DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
+    DB_URL = "postgres://acrjzwizqiaesb:c564279aaf6d115013c3f294f69f47ffcb4fb221f50c7ad651ba7190d146c740@ec2-54-78-45-84.eu-west-1.compute.amazonaws.com:5432/d5cnb4697ra1rg"
+   #DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
