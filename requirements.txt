@@ -77,7 +77,7 @@ nekos.py
 motor
 gpytranslate
 fontTools
-opencv-python-headless
+opencv-python
 odmantic
 tzlocal
 pendulum
