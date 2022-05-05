@@ -11,7 +11,7 @@ start_service.bat
 # Session files
 geezram/*.session
 geezram/*.session-journal
-Emiko.session-journal
+geezram.session-journal
 *.session
 
 # Byte-compiled / optimized / DLL files

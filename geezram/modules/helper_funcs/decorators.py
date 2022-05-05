@@ -13,7 +13,7 @@ from geezram import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
-class EmikoHandler:
+class geezramHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -54,7 +54,7 @@ class EmikoHandler:
                         group,
                     )
                 LOGGER.debug(
-                    f"[EMIKOCMD] Loaded handler {command} for function {func.__name__} in group {group}"
+                    f"[geezramCMD] Loaded handler {command} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -81,7 +81,7 @@ class EmikoHandler:
                         )
                     )
                 LOGGER.debug(
-                    f"[EMIKOCMD] Loaded handler {command} for function {func.__name__}"
+                    f"[geezramCMD] Loaded handler {command} for function {func.__name__}"
                 )
 
             return func
@@ -110,7 +110,7 @@ class EmikoHandler:
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
                 LOGGER.debug(
-                    f"[EMIKOMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
+                    f"[geezramMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -124,7 +124,7 @@ class EmikoHandler:
                         MessageHandler(pattern, func, run_async=run_async)
                     )
                 LOGGER.debug(
-                    f"[EMIKOMSG] Loaded filter pattern {pattern} for function {func.__name__}"
+                    f"[geezramMSG] Loaded filter pattern {pattern} for function {func.__name__}"
                 )
 
             return func
@@ -139,7 +139,7 @@ class EmikoHandler:
                 )
             )
             LOGGER.debug(
-                f"[EMIKOCALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
+                f"[geezramCALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
             )
             return func
 
@@ -165,14 +165,14 @@ class EmikoHandler:
                 )
             )
             LOGGER.debug(
-                f"[EMIKOINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}"
+                f"[geezramINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}"
             )
             return func
 
         return _inlinequery
 
 
-geez|ramcmd = EmikoHandler(d).command
-geez|rammsg = EmikoHandler(d).message
-geez|ramcallback = EmikoHandler(d).callbackquery
-geez|raminline = EmikoHandler(d).inlinequery
+geez|ramcmd = geezramHandler(d).command
+geez|rammsg = geezramHandler(d).message
+geez|ramcallback = geezramHandler(d).callbackquery
+geez|raminline = geezramHandler(d).inlinequery
