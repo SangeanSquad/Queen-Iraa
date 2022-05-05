@@ -1,3 +1,4 @@
+setuptools==45.1.0
 aiofiles
 aiohttp
 alphabet_detector
