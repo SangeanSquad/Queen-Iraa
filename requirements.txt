@@ -12,7 +12,7 @@ bleach
 bs4
 cachetools
 cloudscraper
-coffeehouse
+coffeehouse==2.2.0
 countryinfo
 CurrencyConverter
 Chython
