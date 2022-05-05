@@ -12,7 +12,7 @@ bleach
 bs4
 cachetools
 cloudscraper
-coffeehouse==2.2.0
+coffeehouse
 countryinfo
 CurrencyConverter
 Chython
@@ -48,7 +48,7 @@ multicolorcaptcha
 nekos.py
 nltk
 nudepy
-numpy==1.7.0
+numpy
 odmantic
 opencv-python-headless
 pendulum
