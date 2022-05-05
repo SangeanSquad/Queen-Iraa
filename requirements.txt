@@ -1,4 +1,4 @@
-setuptools==60.8.0
+setuptools==45.2.0
 wheel
 requests
 aiofiles
