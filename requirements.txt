@@ -1,3 +1,4 @@
+numpy
 future
 emoji
 lxml
@@ -5,7 +6,7 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot
+python-telegram-bot==13.11.0
 SQLAlchemy==1.4.35
 psycopg2-binary
 feedparser
@@ -43,7 +44,7 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram
+pyrogram==1.4.16
 PyDictionary
 git+https://github.com/Sorrybabe/downloader
 youtube_search_python==1.4.9
@@ -76,8 +77,8 @@ nudepy
 nekos.py
 motor
 gpytranslate
-fontTools
-opencv-python-headless
+#fontTools
+opencv-python-headless==4.5.5.62
 odmantic
 tzlocal
 pendulum
@@ -85,4 +86,3 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
-numpy
