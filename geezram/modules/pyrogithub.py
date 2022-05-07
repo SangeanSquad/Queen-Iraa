@@ -79,7 +79,7 @@ REPO_ = UPSTREAM_REPO
 BRANCH_ = U_BRANCH
 HEROKU_URL = fetch_heroku_git_url(HEROKU_API_KEY, HEROKU_APP_NAME)
 
-@pbot.on_message(filters.command("grupdate") & filters.user(OWNER_ID, DEV_USERS))
+@pbot.on_message(filters.command("grupdate") & filters.user(OWNER_ID))
 async def updatebot(_, message: Message):
     msg = await message.reply_text("**updating bot, please wait for a while...**")
     try:
