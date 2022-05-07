@@ -95,7 +95,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URL = os.environ.get("DATABASE_URI")
+    DB_URL = os.environ.get("DATABASE_URL")
     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
@@ -124,7 +124,9 @@ if ENV:
     BOT_ID = int(os.environ.get("BOT_ID", None))
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
-
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO" or "https://github.com/SangeanSquad/Queen-Iraa")
+    U_BRANCH = os.environ.get("U_BRANCH" or "main")
+    
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     try:
@@ -174,7 +176,7 @@ else:
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
 
-    DB_URL = "postgres://acrjzwizqiaesb:c564279aaf6d115013c3f294f69f47ffcb4fb221f50c7ad651ba7190d146c740@ec2-54-78-45-84.eu-west-1.compute.amazonaws.com:5432/d5cnb4697ra1rg"
+    DB_URL = Config.DB_URL
     MONGO_DB_URI = Config.MONGO_DB_URI
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
@@ -214,8 +216,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2137482758)
-DEV_USERS.add(1866066766)
+DEV_USERS.add(5181183910)
 
 if not SPAMWATCH_API:
     sw = None

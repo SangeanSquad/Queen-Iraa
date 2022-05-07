@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hallo, Saya adalah Geez|RAM Robot(https://telegra.ph/file/3b757c3986ec72f09096c.jpg)\nBot Manage yang dibuat dan dibesarkan seperti anak sendiri, oleh para manusia yang tidak seberapa di Geez dan RAM"""
+Hallo, Saya adalah Geez|RAM Robot, Ported dari Queen-Iraa\nBot Manage yang dibuat dan dibesarkan seperti anak sendiri, oleh para manusia yang tidak seberapa di Geez dan RAM"""
 buttons = [
     [
         InlineKeyboardButton(
@@ -90,7 +90,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="help", callback_data="help_back"),
+            text="Bantuan", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
@@ -100,10 +100,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="GEEZ", url="https://t.me/GeezSupport"
+            text="Geez Support", url="https://t.me/GeezSupport"
         ),
         InlineKeyboardButton(
-            text="RAM", url="https://t.me/ramsupportt"
+            text="RAM Support", url="https://t.me/ramsupportt"
         ),
     ],
 ]
