@@ -25,6 +25,11 @@ async def carbon_func(_, message):
 
 
 IRAA = "https://telegra.ph/file/3b757c3986ec72f09096c.jpg"
+Deploy = "https://telegra.ph/file/fbee80404f99a7a913d59.jpg"
+String = "https://telegra.ph/file/1741ee14bb0ea0d0dc376.jpg"
+Repo = "https://telegra.ph/file/e9a82819b8b101ec3c798.jpg"
+Apikey = "https://telegra.ph/file/dab3063e78b367ca9e7af.jpg"
+Tutorial = "https://telegra.ph/file/900382d68a127bc93af4b.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
@@ -59,7 +64,7 @@ async def repo(_, message):
 @pbot.on_message(filters.command("deploy"))
 async def deploy(_, message):
     await message.reply_photo(
-        photo=IRAA,
+        photo=Deploy,
         caption=f"""**Deploy...**
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -84,7 +89,7 @@ async def deploy(_, message):
 @pbot.on_message(filters.command("tutorial"))
 async def tutorial(_, message):
     await message.reply_photo(
-        photo=IRAA,
+        photo=Tutorial,
         caption=f"""**Tutorial & Dyno Heroku...**
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -109,7 +114,7 @@ async def tutorial(_, message):
 @pbot.on_message(filters.command("string"))
 async def tutorial(_, message):
     await message.reply_photo(
-        photo=IRAA,
+        photo=String,
         caption=f"""**String...**
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -132,7 +137,7 @@ async def tutorial(_, message):
 @pbot.on_message(filters.command("api"))
 async def tutorial(_, message):
     await message.reply_photo(
-        photo=IRAA,
+        photo=Apikey,
         caption=f"""**Api key & Hash...**
 """,
         reply_markup=InlineKeyboardMarkup(
