@@ -58,7 +58,10 @@ async def repo(_, message):
 
 @pbot.on_message(filters.command("deploy"))
 async def deploy(_, message):
-    await message.reply_text(
+    await message.reply_photo(
+        photo=IRAA,
+        caption=f"""**Deploy...**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [ 
@@ -80,7 +83,10 @@ async def deploy(_, message):
 
 @pbot.on_message(filters.command("tutorial"))
 async def tutorial(_, message):
-    await message.reply_text(
+    await message.reply_photo(
+        photo=IRAA,
+        caption=f"""**Tutorial & Dyno Heroku...**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [ 
@@ -102,7 +108,10 @@ async def tutorial(_, message):
 
 @pbot.on_message(filters.command("string"))
 async def tutorial(_, message):
-    await message.reply_text(
+    await message.reply_photo(
+        photo=IRAA,
+        caption=f"""**String...**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [ 
@@ -122,7 +131,10 @@ async def tutorial(_, message):
 
 @pbot.on_message(filters.command("api"))
 async def tutorial(_, message):
-    await message.reply_text(
+    await message.reply_photo(
+        photo=IRAA,
+        caption=f"""**Api key & Hash...**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [ 
