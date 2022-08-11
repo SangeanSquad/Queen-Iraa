@@ -48,10 +48,90 @@ async def repo(_, message):
                 ],
                 [ 
                     InlineKeyboardButton(
-                        "Geez Support", url="https://t.me/GeezSupport"),
+                        "Geez Project", url="https://github.com/vckyou/GeezProjects"),
                     InlineKeyboardButton(
-                        "Ram Support", url="https://t.me/ramsupportt")
+                        "RAM-UBOT", url="https://github.com/ramadhani892/RAM-UBOT")
                 ]
             ]
+        )
+    )
+
+@pbot.on_message(filters.command("deploy"))
+async def deploy(_, message):
+    await message.reply_text(
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [ 
+                    InlineKeyboardButton(
+                        "Geez Project", url="https://telegram.dog/XTZ_HerokuBot?start=dmNreW91L0dlZXpQcm9qZWN0cyBtYXN0ZXI="),
+                    InlineKeyboardButton(
+                        "RAM-UBOT", url="https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JBTS1VQk9UIG1hc3Rlcg")
+                ],  
+                [ 
+                    InlineKeyboardButton(
+                        "VIA WEB", url="https://geezram.now.sh"),
+                    InlineKeyboardButton(
+                        "Direct-Deploy", url="https://heroku.com/deploy?template=https://github.com/SangeanSquad/RAM-UBOT")
+                ]
+            ]
+
+        )
+    )
+
+@pbot.on_message(filters.command("tutorial"))
+async def tutorial(_, message):
+    await message.reply_text(
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [ 
+                    InlineKeyboardButton(
+                        "Tutorial", url="https://youtu.be/9rpm37jWx70"),
+                    InlineKeyboardButton(
+                        "On Dyno", url="https://t.me/GeezSupport/250434")
+                ],  
+                [ 
+                    InlineKeyboardButton(
+                        "Restart Dyno", url="https://t.me/Geezprojectt/75"),
+                    InlineKeyboardButton(
+                        "Buat Heroku", url="https://youtu.be/7Ujhl8qdeKY")
+                ]
+            ]
+
+        )
+    )
+
+@pbot.on_message(filters.command("string"))
+async def tutorial(_, message):
+    await message.reply_text(
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [ 
+                    InlineKeyboardButton(
+                        "String RAM", url="https://t.me/stringramubot"),
+                    InlineKeyboardButton(
+                        "String Geez", url="https://t.me/GeezStringBot")
+                ],  
+                [ 
+                    InlineKeyboardButton(
+                        "String Replit", url="https://replit.com/@izzy-adeeva/UserButt")
+                ]
+            ]
+
+        )
+    )
+
+@pbot.on_message(filters.command("api"))
+async def tutorial(_, message):
+    await message.reply_text(
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [ 
+                    InlineKeyboardButton(
+                        "Lebah Api", url="https://t.me/lebahsupportbot"),
+                    InlineKeyboardButton(
+                        "Telegram OF", url="https://my.telegram.org")
+                ]
+            ]
+
         )
     )
