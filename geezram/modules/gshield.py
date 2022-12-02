@@ -9,7 +9,7 @@ from better_profanity import profanity
 from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
-from geezram.confing import get_int_key, get_str_key
+from geezram.config import get_int_key, get_str_key
 from geezram.services.telethonbasics import is_admin
 from geezram.events import register
 from pymongo import MongoClient
