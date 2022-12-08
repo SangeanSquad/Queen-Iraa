@@ -37,7 +37,7 @@ async def repo(_, message):
         photo=IRAA,
         caption=f"""**Hai, saya Queen Iraa untuk Geez dan Ram** 
 
-**Owner repo : [izzy](https://t.me/kang_keong17)**
+**Owner repo : [izzy](https://t.me/jasadeak)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -121,13 +121,11 @@ async def tutorial(_, message):
             [
                 [ 
                     InlineKeyboardButton(
-                        "String RAM", url="https://t.me/stringramubot"),
-                    InlineKeyboardButton(
-                        "String Geez", url="https://t.me/GeezStringBot")
-                ],  
-                [ 
+                        "String Geez|RAM", url="https://t.me/geezramstringbot"),
                     InlineKeyboardButton(
                         "String Replit", url="https://replit.com/@izzy-adeeva/UserButt")
+                ],   
+                    
                 ]
             ]
 
