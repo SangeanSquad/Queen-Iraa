@@ -65,7 +65,7 @@ async def repo(_, message):
 async def deploy(_, message):
     await message.reply_photo(
         photo=Deploy,
-        caption=f"""**Deploy...**
+        caption=f"""**Deploy (UNDER MAINTENANCE)...**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
