@@ -99,7 +99,7 @@ async def variable(var):
             return await m.edit(f"**{variable}**  `is not exists`")
 
 
-@register(pattern="^/musikusage(?: |$)")
+@register(pattern="^/usage(?: |$)")
 async def dyno_usage(dyno):
     if dyno.fwd_from:
         return
