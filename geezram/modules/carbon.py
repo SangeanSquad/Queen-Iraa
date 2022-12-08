@@ -126,7 +126,6 @@ async def tutorial(_, message):
                         "String Replit", url="https://replit.com/@izzy-adeeva/UserButt")
                 ],   
                     
-                ]
             ]
 
         )
