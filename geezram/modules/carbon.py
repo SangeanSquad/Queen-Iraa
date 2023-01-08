@@ -67,7 +67,7 @@ async def repo(_, message):
                     InlineKeyboardButton(
                         "Ayra x Userbot", url="https://github.com/Onlymeriz/ayra"),
                     InlineKeyboardButton(
-                        "File Sharing 3 Button", url="https://github.com/Onlymeris/fs")
+                        "FS 3 Button", url="https://github.com/Onlymeris/fs")
                 ]
             ]
         )
@@ -77,7 +77,7 @@ async def repo(_, message):
 async def deploy(_, message):
     await message.reply_photo(
         photo=Deploy,
-        caption=f"""**Deploy...**
+        caption=f"""**Deploy Heroku...**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -85,14 +85,18 @@ async def deploy(_, message):
                     InlineKeyboardButton(
                         "Geez Project", url="https://heroku.com/deploy?template=https://github.com/GeezRam/Geez-Projects"),
                     InlineKeyboardButton(
-                        "RAM-Pyro", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RamPyro-Bot")
+                        "RAM-Ubot", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RAM-UTOD")
                 ],  
                 [ 
                     InlineKeyboardButton(
-                        "Geez-Pyro Beta", url="https://github.com/hitokizzy/Geez-Pyro"),
+                        "Geez-Pyro Beta", url="https://heroku.com/deploy?template=https://github.com/hitokizzy/Geez-Pyro"),
                     InlineKeyboardButton(
-                        "Ayra-Userbot", url="https://github.com/Onlymeriz/Ayra")
-                ]
+                        "RamPyro-Bot", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RamPyro-bot")
+                ],
+                [
+                    InlineKeyboardButton(
+                        "Ayra x Userbot", url="https://heroku.com/deploy?template=https://github.com/Onlymeriz/Ayra")
+                ],
             ]
 
         )
