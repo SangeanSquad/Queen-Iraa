@@ -65,7 +65,7 @@ async def repo(_, message):
                 ],
                 [ 
                     InlineKeyboardButton(
-                        "Arya x Userbot", url="https://github.com/Onlymeriz/arya"),
+                        "Ayra x Userbot", url="https://github.com/Onlymeriz/ayra"),
                     InlineKeyboardButton(
                         "File Sharing 3 Button", url="https://github.com/Onlymeris/fs")
                 ]
@@ -91,7 +91,7 @@ async def deploy(_, message):
                     InlineKeyboardButton(
                         "Geez-Pyro Beta", url="https://github.com/hitokizzy/Geez-Pyro"),
                     InlineKeyboardButton(
-                        "Arya-Userbot", url="https://github.com/Onlymeriz/Ayra")
+                        "Ayra-Userbot", url="https://github.com/Onlymeriz/Ayra")
                 ]
             ]
 
