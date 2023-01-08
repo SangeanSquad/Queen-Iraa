@@ -12,6 +12,7 @@
     
    "logo":    "https://telegra.ph/file/3b757c3986ec72f09096c.jpg",  
    "repository": "https://github.com/SangeanSquad/Queen-Iraa",
+   "stack" : "Heroku-20",
    "addons": [
           {
          "options": {
