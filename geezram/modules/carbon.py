@@ -24,7 +24,7 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-IRAA = "https://telegra.ph/file/3b757c3986ec72f09096c.jpg"
+IRAA = "https://telegra.ph/file/c78bb1efdeed38ee16eb2.png"
 Deploy = "https://telegra.ph/file/fbee80404f99a7a913d59.jpg"
 String = "https://telegra.ph/file/1741ee14bb0ea0d0dc376.jpg"
 Repo = "https://telegra.ph/file/e9a82819b8b101ec3c798.jpg"
@@ -35,7 +35,7 @@ Tutorial = "https://telegra.ph/file/900382d68a127bc93af4b.jpg"
 async def repo(_, message):
     await message.reply_photo(
         photo=IRAA,
-        caption=f"""**Hai, saya Queen Iraa untuk Geez dan Ram** 
+        caption=f"""**Hai, saya Geez|Ram** 
 
 **Owner repo : [izzy](https://t.me/jasadeak)**
 **Python Version :** `{y()}`
@@ -55,7 +55,19 @@ async def repo(_, message):
                     InlineKeyboardButton(
                         "Geez Project", url="https://github.com/vckyou/GeezProjects"),
                     InlineKeyboardButton(
-                        "RAM-UBOT", url="https://github.com/ramadhani892/RAM-UBOT")
+                        "RAM-UBOT", url="https://github.com/GeezRam/RAM-UBOT")
+                ],
+                [ 
+                    InlineKeyboardButton(
+                        "Geez Pyro", url="https://github.com/hitokizzy/Geez-Pyro"),
+                    InlineKeyboardButton(
+                        "RAM Pyro", url="https://github.com/izzy-adeeva/RamPyro-Bot")
+                ],
+                [ 
+                    InlineKeyboardButton(
+                        "Arya x Userbot", url="https://github.com/Onlymeriz/arya"),
+                    InlineKeyboardButton(
+                        "File Sharing 3 Button", url="https://github.com/Onlymeris/fs")
                 ]
             ]
         )
@@ -65,21 +77,21 @@ async def repo(_, message):
 async def deploy(_, message):
     await message.reply_photo(
         photo=Deploy,
-        caption=f"""**Deploy (UNDER MAINTENANCE)...**
+        caption=f"""**Deploy...**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [ 
                     InlineKeyboardButton(
-                        "Geez Project", url="https://telegram.dog/XTZ_HerokuBot?start=dmNreW91L0dlZXpQcm9qZWN0cyBtYXN0ZXI="),
+                        "Geez Project", url="https://heroku.com/deploy?template=https://github.com/GeezRam/Geez-Projects"),
                     InlineKeyboardButton(
-                        "RAM-UBOT", url="https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JBTS1VQk9UIG1hc3Rlcg")
+                        "RAM-Pyro", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RamPyro-Bot")
                 ],  
                 [ 
                     InlineKeyboardButton(
-                        "VIA WEB", url="https://geezram.now.sh"),
+                        "Geez-Pyro Beta", url="https://github.com/hitokizzy/Geez-Pyro"),
                     InlineKeyboardButton(
-                        "Direct-Deploy", url="https://heroku.com/deploy?template=https://github.com/SangeanSquad/RAM-UBOT")
+                        "Arya-Userbot", url="https://github.com/Onlymeriz/Ayra")
                 ]
             ]
 
