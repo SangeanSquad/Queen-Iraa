@@ -32,7 +32,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "basic"
+      "size": "basic"}
       },
    "env": {
       "TOKEN": {
