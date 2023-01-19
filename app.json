@@ -10,7 +10,7 @@
          "ram"
       ],
     
-   "logo":    "https://telegra.ph/file/3b757c3986ec72f09096c.jpg",  
+   "logo":"https://telegra.ph/file/3b757c3986ec72f09096c.jpg",  
    "repository": "https://github.com/SangeanSquad/Queen-Iraa",
    "stack": "heroku-22",
    "addons": [
@@ -32,9 +32,8 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "basic"
-   }
-   },
+      "size": "basic"}
+      },
    "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
