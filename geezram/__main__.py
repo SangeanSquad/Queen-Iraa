@@ -226,8 +226,9 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+        from geezram import INFOPIC
+        update.effective_message.reply_photo(INFOPIC, caption=
+            "👋 Hi. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
