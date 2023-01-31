@@ -19,11 +19,12 @@ from telegram.ext import (
     MessageHandler,
     run_async,
 )
+from geezram.modules.helper_funcs.chat_status import user_admin
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
-
+@user_admin
 def afk(update: Update, context: CallbackContext):
     args = update.effective_message.text.split(None, 1)
     user = update.effective_user

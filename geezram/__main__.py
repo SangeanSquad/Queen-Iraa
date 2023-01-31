@@ -100,10 +100,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="Geez Support", url="https://t.me/GeezSupport"
+            text="Geez|RAM", url="https://t.me/GeezRam"
         ),
         InlineKeyboardButton(
-            text="RAM Support", url="https://t.me/ramsupportt"
+            text="Channel", url="https://t.me/ramsupportt"
         ),
     ],
 ]
@@ -111,7 +111,7 @@ buttons = [
 geezram_IMG = "https://telegra.ph/file/3b757c3986ec72f09096c.jpg"
 
 HELP_STRINGS = """
-GEEZ/RAM BOT ‌ٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖ *Features*\n*» Module command tersedia*\n*» Gunakan / atau ! untuk command*\n*»*\n\n*ㅤㅤㅤㅤㅤㅤ» Perintah Dasar «*\n\n➲ /start : *Start .*\n➲ /Donasi : *Semua karya Geez/Ram adalah gratis, jika anda diminta bayaran berati anda tertipu.*\n➲ /help  : *Command yg tersedia.*\n*  ‣ PM : Saya akan kirimkan semua command.*\n*  ‣ Group : Saya akan kirimkan melalu PM, Semua module yang tersedia.*\n\n*» Untuk command lainnya, silahkan klik tombol dibawah «* """
+GEEZ/RAM BOT ‌ٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖ *Features*\n*» Module command tersedia*\n*» Gunakan / atau ! untuk command*\n*»*\n\n*» Perintah Dasar «*\n\n➲ /start : *Start .*\n➲ /Donasi : *Semua karya Geez/Ram adalah gratis, jika anda diminta bayaran berati anda tertipu.*\n➲ /help  : *Command yg tersedia.*\n*  ‣ PM : Saya akan kirimkan semua command.*\n*  ‣ Group : Saya akan kirimkan melalu PM, Semua module yang tersedia.*\n\n*» Untuk command lainnya, silahkan klik tombol dibawah «* """
 
 DONATE_STRING = """Sedekah dan Beramal ke Masjid/mushola terdekat"""
 
@@ -226,9 +226,8 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        from geezram import INFOPIC
-        update.effective_message.reply_photo(INFOPIC, caption=
-            "👋 Hi. Nice to meet You.",
+        update.effective_message.reply_text(
+            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 

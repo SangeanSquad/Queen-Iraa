@@ -37,7 +37,7 @@ async def repo(_, message):
         photo=IRAA,
         caption=f"""**Hai, saya Geez|Ram** 
 
-**Owner repo : [izzy](https://t.me/jasadeak)**
+**Owner repo : [izzy](https://t.me/jas4deak)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -61,7 +61,7 @@ async def repo(_, message):
                     InlineKeyboardButton(
                         "Geez Pyro", url="https://github.com/hitokizzy/Geez-Pyro"),
                     InlineKeyboardButton(
-                        "RAM Pyro", url="https://github.com/izzy-adeeva/RamPyro-Bot")
+                        "RAM Pyro", url="https://github.com/izzy-adeeva/rampyro-master")
                 ],
                 [ 
                     InlineKeyboardButton(
@@ -89,9 +89,9 @@ async def deploy(_, message):
                 ],  
                 [ 
                     InlineKeyboardButton(
-                        "Geez-Pyro Beta", url="https://heroku.com/deploy?template=https://github.com/hitokizzy/Geez-Pyro"),
+                        "Geez-Pyro", url="https://heroku.com/deploy?template=https://github.com/hitokizzy/Geez-Pyro"),
                     InlineKeyboardButton(
-                        "RamPyro-Bot", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RamPyro-bot")
+                        "RamPyro-Bot", url="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/rampyro-master")
                 ],
                 [
                     InlineKeyboardButton(
@@ -121,6 +121,12 @@ async def tutorial(_, message):
                         "Restart Dyno", url="https://t.me/Geezprojectt/75"),
                     InlineKeyboardButton(
                         "Buat Heroku", url="https://youtu.be/7Ujhl8qdeKY")
+                ],
+                [ 
+                    InlineKeyboardButton(
+                        "Open Ai KEY", url="https://youtu.be/MkyXzk5Ul0s"),
+                    InlineKeyboardButton(
+                        "Inline Bot", url="https://youtu.be/6CHmSRnmYHA")
                 ]
             ]
 
@@ -165,3 +171,5 @@ async def tutorial(_, message):
 
         )
     )
+    
+
